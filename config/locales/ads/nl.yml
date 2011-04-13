@@ -1,0 +1,16 @@
+# Messages for Dutch (Nederlands)
+# Exported from translatewiki.net
+# Export driver: syck
+# Author: Siebrand
+nl: 
+  ads: 
+    ad_links: Nieuwe advertentie van het type %{type} toevoegen
+    create: 
+      success: De advertentie is aangemaakt.
+    index: 
+      add_adbard: Nieuwe advertentie van het type Ad Bard toevoegen
+      add_adsense: nieuwe Google AdSense advertentie toevoegen
+      title: Advertenties
+    name: "Naam:"
+    position: "Positie:"
+    title: Nieuwe advertentie van het type %{type} toevoegen

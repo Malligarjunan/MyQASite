@@ -1,0 +1,154 @@
+# Messages for Dutch (Nederlands)
+# Exported from translatewiki.net
+# Export driver: syck
+# Author: McDutchie
+# Author: Protozoan
+# Author: Siebrand
+nl: 
+  activerecord: 
+    models: 
+      badge: Speldje
+      badges: Speldjes
+  badges: 
+    index: 
+      description: Alle speldjes die u kunt verdienen. Deel uw kennis, verdien speldjes.
+      title: speldjes
+    shared: 
+      addict: 
+        description: Heeft de site twintig dagen achter elkaar bezocht
+        name: Verslaafde
+      autobiographer: 
+        description: Heeft alle velden in het gebruikersprofiel ingevuld
+        name: Autobiograaf
+      celebrity: 
+        description: Heeftmeer dan honderd volgers
+        name: Beroemdheid
+      citizen_patrol: 
+        description: Eerste bericht gemarkeerd
+        name: Burgerpatrouille
+      civic_duty: 
+        description: Heeft driehonderd keer gestemd
+        name: Burgerplicht
+      cleanup: 
+        description: Heeft een eerste keer teruggedraaid
+        name: Opruimen
+      commentator: 
+        description: Heeft tien opmerkingen achtergelaten
+        name: Commentator
+      critic: 
+        description: Heeft voor de eerste keer negatief beoordeeld
+        name: Criticus
+      disciplined: 
+        description: Heeft een eigen bericht met een score van drie of hoger verwijderd
+        name: Gedisciplineerd
+      editor: 
+        description: Eerste bericht bewerkt
+        name: Redacteur
+      effort_medal: 
+        description: Heeft honderd positieve stemmen gekregen
+        name: Inspanningsmedaille
+      enlightened: 
+        description: Heeft een antwoord gegeven dat tenminste tien keer positief is beoordeeld
+        name: Verlicht
+      famous_question: 
+        description: Heeft een vraag gesteld die tienduizend keer bekeken is
+        name: Beroemde vraag
+      fanatic: 
+        description: Heeft de site honderd dagen achter elkaar bezocht
+        name: Fanaticus
+      favorite_question: 
+        description: Heeft een vraag gesteld die door 25 gebruikers als favoriet is ingesteld
+        name: Favoriete vraag
+      friendly: 
+        description: Is voor de eerste keer iemand gaan volgen
+        name: Vriendelijk
+      good_answer: 
+        description: Heeft een antwoord gegeven dat een gemiddelde van meer dan 25 stemmen bereikt
+        name: Goed antwoord
+      good_question: 
+        description: Heeft een vraag gesteld die een gemiddelde van meer dan 25 stemmen bereikt
+        name: Goede vraag
+      great_answer: 
+        description: Heeft een antwoord gegeven dat honderd keer positief is beoordeeld
+        name: Perfect antwoord
+      great_question: 
+        description: Vraag die honderd keer positief beoordeeld is
+        name: supervraag
+      guru: 
+        description: Heeft een oplossing gegeven voor een vraag met een gemiddelde van meer dan 40 stemmen
+        name: Goeroe
+      inquirer: 
+        description: Heeft voor de eerste keer een vraag gesteld
+        name: Onderzoeker
+      interesting_person: 
+        description: Heeft meer dan tien volgers
+        name: Interessant persoon
+      merit_medal: 
+        description: Heeft tweehonderd positieve stemmen gekregen
+        name: Medaille van verdienste
+      necromancer: 
+        description: Heeft een vraag beantwoord meer dan twee maanden na het stellen met tenminste vijf stemmen
+        name: Geestenbezweerder
+      nice_answer: 
+        description: Heeft een antwoord gegeven dat tien keer positief is beoordeeld
+        name: Mooi antwoord
+      nice_question: 
+        description: Heeft een vraag gesteld die tien keer positief beoordeeld is
+        name: goede vraag
+      notable_question: 
+        description: Heeft een vraag gesteld die 2500 keer bekeken is
+        name: Vermeldenswaardige vraag
+      organizer: 
+        description: Heeft een eerste herlabeling uitgevoerd
+        name: Organisator
+      peer_pressure: 
+        description: Heeft eigen bericht met een score van -3 of lager verwijderd
+        name: Groepsdruk
+      pioneer: 
+        description: Een van de eerste geregistreerde gebruikers
+        name: Pionier
+      popstar: 
+        description: Heeftvijfhonderd positieve stemmen en maximaal tien negatieve stemmen
+        name: Popster
+      popular_person: 
+        description: Heeft meer dan vijftig volgers
+        name: Populaire gebruiker
+      popular_question: 
+        description: Heeft een vraag gesteld die duizend keer bekeken is
+        name: Populaire vraag
+      rockstar: 
+        description: Heeft duizend positieve stemmen en maximaal tien negatieve stemmen
+        name: Rockster
+      scholar: 
+        description: Heeft voor het eerst een zelfgestelde vraag beantwoord met een geaccepteerd antwoord
+        name: Geleerde
+      self-learner: 
+        description: Heeft een eigen vraag beantwoord met tenminste drie positieve beoordelingen
+        name: Zelflerend
+      service_medal: 
+        description: Heeft driehonderd positieve stemmen
+        name: Dienstmedaille
+      shapado: 
+        description: Heeft de site acht dagen achter elkaar bezocht
+      stellar_question: 
+        description: Heeft een vraag gesteld die door honderd gebruikers als favoriet is aangegeven
+        name: Bovennatuurlijk goede vraag
+      student: 
+        description: Heeft een vraag gesteld met tenminste één positieve stem
+        name: Student
+      supporter: 
+        description: Heeft de eerste keer positief gestemd
+        name: Supporter
+      troubleshooter: 
+        description: Heeft voor de eerste keer antwoord gegeven
+        name: Probleemoplosser
+      tutor: 
+        description: geef een antwoord op een vraag met een gemiddelde van meer dan twee stemmen
+        name: Leermeester
+    show: 
+      description: "Gebruikers die dit speldje recentelijk hebben verdiend:"
+      earned: verdiend
+      for_tag_bronze: tweehonderd stemmen in label %{tag}
+      for_tag_gold: duizend stemmen in label %{tag}
+      for_tag_silver: Vierhonderd stemmen in label %{tag}
+      title: Speldje %{type}

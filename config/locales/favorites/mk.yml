@@ -1,0 +1,13 @@
+# Messages for Macedonian (Македонски)
+# Exported from translatewiki.net
+# Export driver: syck
+# Author: Bjankuloski06
+mk: 
+  activerecord: 
+    models: 
+      favorite: Бендисано
+      favorites: Бендисани
+  favorites: 
+    create: 
+      success: Прашањето е додадено во бендисаните
+      unauthenticated: Ќе ви треба сметка за да можете да бендисувате

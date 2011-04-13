@@ -1,0 +1,62 @@
+# Messages for French (Français)
+# Exported from translatewiki.net
+# Export driver: syck
+# Author: McDutchie
+# Author: Patcito
+# Author: Peter17
+# Author: Verdy p
+fr: 
+  feeds: 
+    feed: Flux
+    post_new_questions: Poster les nouvelles questions à
+    question: Souscrire à cette question
+    questions: Souscrire à toutes les questions
+    share_on_twitter: twitter, facebook et plus...
+    tag: Souscrite au tag
+    user: Inscrivez-vous aux questions de l'utilisateur
+  global: 
+    active: Activer
+    anonymous: Anonyme
+    by: par
+    current: Actuel
+    from: depuis %{site}
+    group_not_found: La page %{url} n'existe pas
+    or: ou
+    permission_denied: Permission refusée
+    please_login: Ouvrez une session s'il vous plait
+    preview: Prévisualisation
+    previous: Précédent
+    share: Partager
+  languages: 
+    any: Toutes
+    user: Mes langues
+  models: 
+    question: La question
+  number: 
+    x_time: 
+      one: "%{count} fois"
+      other: "%{count} fois"
+      zero: Jamais
+  pagination: 
+    next: Suivant »
+    previous: « Précédent
+  scaffold: 
+    add: Ajouter
+    back: Retour
+    cancel: Annuler
+    close: Fermer
+    create: Créer
+    destroy: Supprimer
+    details: Détails
+    edit: Éditer
+    more: Plus...
+    new: Ajouter %{model}
+    post_as_anonymous: Publier de manière anonyme
+    save: Sauvegarder
+    send: Envoyer
+    show: Monter
+    sure: Êtes-vous sûr de vouloir supprimer ce %{model} ?
+    update: Actualiser
+  time: 
+    ago: il y a %{time}
+    today: aujourd'hui

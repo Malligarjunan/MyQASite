@@ -1,0 +1,17 @@
+# Messages for Latin American Spanish (espanol de America Latina)
+# Exported from translatewiki.net
+# Export driver: syck
+# Author: Crazymadlover
+# Author: McDutchie
+es-419: 
+  ads: 
+    ad_links: Agregar un nuevo anuncio %{type}
+    create: 
+      success: Anuncio fue creado exitosamente.
+    index: 
+      add_adbard: Agregar un nuevo anuncio adbard
+      add_adsense: Agregar un nuevo anuncio google adsense
+      title: Anuncios
+    name: "Nombre:"
+    position: "Posición:"
+    title: Agregar un nuevo anuncio %{type}

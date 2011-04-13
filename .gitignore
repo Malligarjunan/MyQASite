@@ -1,0 +1,17 @@
+*~
+.DS_Store
+*.bak
+*.orig
+coverage
+*.log
+*.sqlite3
+public/stylesheets/compiled/
+config/shapado.yml
+data/*.dat
+config/database.yml
+base_packaged.*
+.directory
+public/javascripts/jsMath/fonts/
+.sass-cache
+*.kdev4
+.bundle
