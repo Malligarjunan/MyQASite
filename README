@@ -14,57 +14,29 @@ sudo gem install -v=2.3.10 rails
 
 1. Download the sources:
 
-    git clone git://gitorious.org/shapado/shapado.git
+    git clone git@github.com:Malligarjunan/MyQASite.git
 
-    cd shapado/
+    cd MyQASite/
 
 2. Configure the application
 
-    cp config/shapado.sample.yml config/shapado.yml
-    cp config/database.sample.yml config/database.yml
-
     edit shapado.yml
+    edit database.yml
 
 3. Install dependencies
 
     rake gems:install
 
-4. Download GeoIP data
-
-    script/update_geoip
-
-5. Load default data
+4. Load default data
 
     rake bootstrap RAILS_ENV=development
-
-6. Add default subdomain to /etc/hosts, for example:z
+5. Add default subdomain to /etc/hosts, for example:z
 
     "0.0.0.0 localhost.lan group1.localhost.lan group2.localhost.lan"
 
-7. Start the server
+6. Start the server
 
     script/server -e development
 
 
-Follow us on:
-
-* http://twitter.com/shapado
-
-* http://identi.ca/shapado
-
-* http://blog.ricodigo.com/shapado
-
-Talk to us at:
-
-* irc://irc.freenode.org/shapado
-
-* http://shapado.com/chat
-
-* contact \aT/ shapado d0t com
-
-Report bugs at http://shapado.com and use the tags "bug" or "feature-request"
-
-
-
-Happy hacking!
 
