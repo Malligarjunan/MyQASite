@@ -41,7 +41,7 @@ Rails::Initializer.run do |config|
   config.gem "mongomapper_ext", :version => "0.5.0", :source => "http://gemcutter.org"
   config.gem "geoip"
   config.gem "whatlanguage", :version => "1.0.0"
-  config.gem "uuidtools", :version => "2.1.1"
+  config.gem "uuidtools", :version => "2.1.2"
   config.gem "magent", :version => "0.4.2"
   config.gem "differ", :version => "0.1.1"
   config.gem 'super_exception_notifier', :version => '~> 2.0.0', :lib => 'exception_notifier'
