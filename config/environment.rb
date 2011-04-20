@@ -27,7 +27,6 @@ Rails::Initializer.run do |config|
 
   if RUBY_PLATFORM !~ /mswin|mingw/
     config.gem "rdiscount", :version => "1.6.5"
-    config.gem "stemmer", :version => ">=1.0.1"
     config.gem "sanitize", :version => "1.2.1"
   else
     config.gem "maruku", :version => "0.6.0"
@@ -38,6 +37,7 @@ Rails::Initializer.run do |config|
   config.gem "compass", :version => "0.10.6", :lib => "compass", :source => "http://gemcutter.org"
   config.gem "fancy-buttons", :version => "0.5.5", :source => "http://gemcutter.org"
   config.gem "compass-colors", :version => "0.3.1", :source => "http://gemcutter.org"
+  config.gem "ruby-stemmer", :version => ">=0.5.3", :lib => "lingua/stemmer"
   config.gem "mongomapper_ext", :version => "0.5.0", :source => "http://gemcutter.org"
   config.gem "geoip"
   config.gem "whatlanguage", :version => "1.0.0"
