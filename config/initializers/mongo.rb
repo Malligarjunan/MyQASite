@@ -1,8 +1,9 @@
 require 'mm-paginate'
 
 
-MongoMapper.setup(YAML.load_file(Rails.root.join('config', 'database.yml')),
-                  Rails.env, { :logger => Rails.logger, :passenger => false })
+MongoMapper.connection = Mongo::Connection.new('flame.mongohq.com', 27090, { :logger => Rails.logger })
+MongoMapper.database = 'shapado-development'
+MongoMapper.database.authenticate('admin', 'admin')
 
 MongoMapperExt.init
 
