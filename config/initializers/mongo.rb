@@ -1,7 +1,13 @@
 require 'mm-paginate'
 
+
 MongoMapper.setup(YAML.load_file(Rails.root.join('config', 'database.yml')),
                   Rails.env, { :logger => Rails.logger, :passenger => false })
+if ENV[‘MONGOHQ_URL’]
+  MongoMapper.config = {RAILS_ENV => {‘uri’ => ENV[‘MONGOHQ_URL’]}}
+else
+  MongoMapper.config = {RAILS_ENV => {‘uri’ => ‘mongodb://admin:admin@flame.mongohq.com:27090/shapado-development’}}
+end
 
 MongoMapperExt.init
 
