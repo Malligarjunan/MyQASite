@@ -1,17 +1,7 @@
 development:
-  database: shapado-development
-  host: flame.mongohq.com
-  port: 27090
-  username: admin
-  password: admin
-  MONGOHQ_URL: mongodb://admin:admin@flame.mongohq.com:27090/shapado-development
+  uri: mongodb://admin:admin@flame.mongohq.com:27090/shapado-development
 test:
   database: shapado-test
 
 production:
-  database: shapado-development
-  host: flame.mongohq.com
-  port: 27090
-  username: admin
-  password: admin
-  MONGOHQ_URL: mongodb://admin:admin@flame.mongohq.com:27090/shapado-development
+  uri: mongodb://admin:admin@flame.mongohq.com:27090/shapado-development
