@@ -25,8 +25,8 @@ namespace :setup do
     task :reset_password => :environment do
         admin = User.find_by_login("admin")
         admin.encrypted_password = nil
-        admin.password = "admins"
-        admin.password_confirmation = "admins"
+        admin.password = "admin"
+        admin.password_confirmation = "admin"
         admin.save
     end
     
@@ -37,9 +37,9 @@ namespace :setup do
         
         subdomain = AppConfig.application_name.gsub(/[^A-Za-z0-9\s\-]/, "")[0,20].strip.gsub(/\s+/, "-").downcase
         default_group = Group.new(:name => AppConfig.application_name,
-                              :domain => AppConfig.domain,
+                              :domain => "",
                               :subdomain => subdomain,
-                              :domain => AppConfig.domain,
+                              :domain => "",
                               :description => "question-and-answer website",
                               :legend => "question and answer website",
                               :default_tags => default_tags,
@@ -50,7 +50,7 @@ namespace :setup do
             default_group.owner = admin
             default_group.add_member(admin, "owner")
         end
-        #default_group.logo = File.open("D:/Users/rails/shapado/public/images/logo.png")
+        default_group.logo =  File.open(RAILS_ROOT+"/public/images/logo.png")
         default_group.logo.extension = "png"
         default_group.logo.content_type = "image/png"
         default_group.save
@@ -62,9 +62,9 @@ namespace :setup do
         
         subdomain = AppConfig.application_name.gsub(/[^A-Za-z0-9\s\-]/, "")[0,20].strip.gsub(/\s+/, "-").downcase
         k12_group = Group.new(:name => 'K12',
-                              :domain => 'K12.localhost',
+                              :domain => '_',
                               :subdomain => subdomain,
-                              :domain => 'K12.localhost',
+                              :domain => '_',
                               :description => " ",
                               :legend => "Website for Students",
                               :default_tags => default_tags,
@@ -76,7 +76,7 @@ namespace :setup do
             k12_group.owner = admin
             k12_group.add_member(admin, "owner")
         end
-        #default_group.logo = File.open("D:/Users/rails/shapado/public/images/logo.png")
+        k12_group.logo =  File.open(RAILS_ROOT+"/public/images/logo.png")
         k12_group.logo.extension = "png"
         k12_group.logo.content_type = "image/png"
         k12_group.save
