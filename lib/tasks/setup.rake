@@ -37,9 +37,9 @@ namespace :setup do
         
         subdomain = AppConfig.application_name.gsub(/[^A-Za-z0-9\s\-]/, "")[0,20].strip.gsub(/\s+/, "-").downcase
         default_group = Group.new(:name => AppConfig.application_name,
-                              :domain => "",
+                              :domain => "ec2-50-19-122-131.compute-1.amazonaws.com",
                               :subdomain => subdomain,
-                              :domain => "",
+                              :domain => "ec2-50-19-122-131.compute-1.amazonaws.com",
                               :description => "question-and-answer website",
                               :legend => "question and answer website",
                               :default_tags => default_tags,
