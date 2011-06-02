@@ -37,9 +37,8 @@ namespace :setup do
         
         subdomain = AppConfig.application_name.gsub(/[^A-Za-z0-9\s\-]/, "")[0,20].strip.gsub(/\s+/, "-").downcase
         default_group = Group.new(:name => AppConfig.application_name,
-                              :domain => "ec2-50-19-122-131.compute-1.amazonaws.com",
+                              :domain => "50.19.122.131",
                               :subdomain => subdomain,
-                              :domain => "ec2-50-19-122-131.compute-1.amazonaws.com",
                               :description => "question-and-answer website",
                               :legend => "question and answer website",
                               :default_tags => default_tags,
@@ -62,9 +61,9 @@ namespace :setup do
         
         subdomain = AppConfig.application_name.gsub(/[^A-Za-z0-9\s\-]/, "")[0,20].strip.gsub(/\s+/, "-").downcase
         k12_group = Group.new(:name => 'K12',
-                              :domain => '_',
-                              :subdomain => subdomain,
-                              :domain => '_',
+                              :domain => 'ec2-50-19-122-131.compute-1.amazonaws.com',
+                              :subdomain => 'K12',
+                              :domain => 'ec2-50-19-122-131.compute-1.amazonaws.com',
                               :description => " ",
                               :legend => "Website for Students",
                               :default_tags => default_tags,
