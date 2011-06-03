@@ -83,7 +83,7 @@ class ApplicationController < ActionController::Base
       end
       _current_group
     end
-    puts "****************************************#{@current_group}"
+    puts "***************************************#{@current_group}"
     @current_group
   end
 
