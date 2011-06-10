@@ -34,7 +34,7 @@ Rails::Initializer.run do |config|
 
   config.gem "jnunemaker-validatable", :version => "1.8.4", :lib => "validatable"
   config.gem "mongo_mapper", :version => "0.8.6", :source => "http://gemcutter.org"
-  config.gem "compass", :version => "0.10.6", :lib => "compass", :source => "http://gemcutter.org"
+  config.gem "compass", :version => "0.11.2", :lib => "compass", :source => "http://gemcutter.org"
   config.gem "fancy-buttons", :version => "0.5.5", :source => "http://gemcutter.org"
   config.gem "compass-colors", :version => "0.3.1", :source => "http://gemcutter.org"
   config.gem "ruby-stemmer", :version => ">=0.5.3", :lib => "lingua/stemmer"
