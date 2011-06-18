@@ -96,7 +96,7 @@ namespace :setup do
     task :create_admin => [:environment] do
         admin = User.new(:login => "admin", :password => "admins",
                                         :password_confirmation => "admins",
-                                        :email => "shapado@example.com",
+                                        :email => "malligarjunan@gmail.com",
                                         :role => "admin")
         
         admin.save!
