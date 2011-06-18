@@ -3,7 +3,8 @@ task :bootstrap => [:environment, "setup:reset",
                     "setup:create_admin",
                     "setup:create_pages",
                     "setup:k12_group",
-                    "setup:sample_questions"] do
+                    "setup:sample_questions",
+                    "setup:create_widgets"] do
 end
 
 #task :bootstrap => [:environment, "setup:create_group"] do
@@ -81,7 +82,7 @@ namespace :setup do
     
     desc "Create default widgets"
     task :create_widgets => :environment do
-        default_group = Group.find_by_domain(AppConfig.domain)
+        default_group = Group.find_by_domain("ec2-50-19-122-131.compute-1.amazonaws.com")
         
         if AppConfig.enable_groups
             default_group.widgets << GroupsWidget.new
