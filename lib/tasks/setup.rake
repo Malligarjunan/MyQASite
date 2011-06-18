@@ -60,9 +60,9 @@ namespace :setup do
         
         subdomain = AppConfig.application_name.gsub(/[^A-Za-z0-9\s\-]/, "")[0,20].strip.gsub(/\s+/, "-").downcase
         k12_group = Group.new(:name => 'K12',
-                              :domain => 'http://ec2-50-19-122-131.compute-1.amazonaws.com',
+                              :domain => 'ec2-50-19-122-131.compute-1.amazonaws.com',
                               :subdomain => 'ec2-50-19-122-131.compute-1.amazonaws.com',
-                              :domain => 'http://ec2-50-19-122-131.compute-1.amazonaws.com',
+                              :domain => 'ec2-50-19-122-131.compute-1.amazonaws.com',
                               :description => " ",
                               :legend => "Website for Students",
                               :default_tags => default_tags,
