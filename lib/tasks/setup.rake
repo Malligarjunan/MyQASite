@@ -1,7 +1,6 @@
 desc "Setup application"
 task :bootstrap => [:environment, "setup:reset",
                     "setup:create_admin",
-                    "setup:create_widgets",
                     "setup:create_pages",
                     "setup:k12_group",
                     "setup:sample_questions"] do
