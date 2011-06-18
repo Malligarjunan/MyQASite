@@ -12,12 +12,12 @@ base: &common
   adbard_host_id: 2746b6d24c93f71df12503ec2ab667e5
   adbard_site_key: e8e24a6b2cba51145dc0c874e1b2f4a4
   enable_adbard: false
-  application_name: Shapado
+  application_name: MyQASite
   is_shapadocom: false
   enable_groups: true
   default_language: en
   enable_i18n: false
-  default_timezone: "Tokyo"
+  default_timezone: "India"
 
   smtp:
     activate: false
@@ -28,12 +28,12 @@ base: &common
     password: "sankar1982"
 
   facebook:
-    activate: false
+    activate: true
     key: facebook api key
     secret: facebook secret key
 
   twitter:
-    activate: false
+    activate: true
     key: twitter api key
     secret: twitter secret key
 
@@ -47,16 +47,16 @@ base: &common
     exception_sender_address:
       "[Shapado] error notifier <error-notifier@example.com>"
     exception_recipients:
-    - admin@example.com
+    - malligarjunan@gmail.com
 
 development:
   <<: *common
-  domain: localhost.lan
+  domain: ec2-50-19-122-131.compute-1.amazonaws.com
 production:
   <<: *common
-  domain: example.com
-  googlean_domain: .shapado.com
+  domain: ec2-50-19-122-131.compute-1.amazonaws.com
+  googlean_domain: .ec2-50-19-122-131.compute-1.amazonaws.com
 test:
   <<: *common
-  domain: test.loc
+  domain: ec2-50-19-122-131.compute-1.amazonaws.com
 
