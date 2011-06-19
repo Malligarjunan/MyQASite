@@ -6,6 +6,8 @@ development:
   adapter: mongodb
   username: admin
   password: admin
+  pool_size: 5
+  timeout: 5
 test:
   database: shapado-development
   host: flame.mongohq.com
@@ -13,6 +15,8 @@ test:
   adapter: mongodb
   username: admin
   password: admin  
+  pool_size: 5
+  timeout: 5  
 production:
   uri: mongodb://admin:admin@flame.mongohq.com:27090/shapado-development
   database: shapado-development
@@ -21,3 +25,5 @@ production:
   adapter: mongodb
   username: admin
   password: admin  
+  pool_size: 5
+  timeout: 5  
