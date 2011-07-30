@@ -8,3 +8,5 @@ test:
 
 production:
   database: shapado-production
+  host: localhost
+  port: 27017
