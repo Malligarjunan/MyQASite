@@ -7,17 +7,19 @@ if File.exist?(db_file)
   db_config = YAML.load_file(db_file)
 
   if db_config.include?(Rails.env) && (mongo_config = db_config[Rails.env])
-    MongoMapper.connection = Mongo::Connection.new(mongo_config['host'],
-                                                   mongo_config['port'] || 27017,
+    MongoMapper.connection = Mongo::Connection.new("flame.mongohq.com",
+                                                   27090,
                                                   :logger => Rails.logger)
-    MongoMapper.database = mongo_config['database']
+    MongoMapper.database = "shapado-development"
+    MongoMapper.database.authenticate('admin', 'admin')
     ok = true
   end
 end
 
 if !ok
-  MongoMapper.connection = Mongo::Connection.new(nil, nil, :auto_reconnect => true, :logger => Rails.logger)
-  MongoMapper.database = "shapado-#{Rails.env}"
+  MongoMapper.connection = Mongo::Connection.new("flame.mongohq.com", 27090, :auto_reconnect => true, :logger => Rails.logger)
+  MongoMapper.database = "shapado-development"
+  MongoMapper.database.authenticate('admin', 'admin')
 end
 
 
