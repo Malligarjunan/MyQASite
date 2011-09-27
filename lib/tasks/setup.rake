@@ -60,9 +60,9 @@ namespace :setup do
         
         subdomain = AppConfig.application_name.gsub(/[^A-Za-z0-9\s\-]/, "")[0,20].strip.gsub(/\s+/, "-").downcase
         k12_group = Group.new(:name => 'K12',
-                              :domain => 'ec2-184-73-179-91.compute-1.amazonaws.com',
-                              :subdomain => 'ec2-184-73-179-91.compute-1.amazonaws.com',
-                              :domain => 'ec2-184-73-179-91.compute-1.amazonaws.com',
+                              :domain => 'k12.localhost',
+                              :subdomain => 'k12.localhost',
+                              :domain => 'k12.localhost',
                               :description => " ",
                               :legend => "Website for Students",
                               :default_tags => default_tags,
@@ -82,7 +82,7 @@ namespace :setup do
     
     desc "Create default widgets"
     task :create_widgets => :environment do
-        default_group = Group.find_by_domain("ec2-184-73-179-91.compute-1.amazonaws.com")
+        default_group = Group.find_by_domain("k12.localhost")
         
         if AppConfig.enable_groups
             default_group.widgets << GroupsWidget.new
