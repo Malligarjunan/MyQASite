@@ -57,18 +57,18 @@ namespace :setup do
     desc "Create the K12 group"
     task :k12_group => [:environment] do
         default_tags = %w[cbse icse I II III IV V VI VII VIII IX X XI XII geometry fractions numbers decimals probability ratio proportion counting roman addition subtraction division multiplication exponential weight capacity units algebra calculus triangle square rectangle shapes polynomial age equations area perimeter diagonal volume percentage]
-        
+
         subdomain = AppConfig.application_name.gsub(/[^A-Za-z0-9\s\-]/, "")[0,20].strip.gsub(/\s+/, "-").downcase
         k12_group = Group.new(:name => 'K12',
-                              :domain => 'k12.localhost',
-                              :subdomain => 'k12.localhost',
-                              :domain => 'k12.localhost',
+                              :domain => 'ec2-184-73-179-91.compute-1.amazonaws.com',
+                              :subdomain => 'ec2-184-73-179-91.compute-1.amazonaws.com',
+                              :domain => 'ec2-184-73-179-91.compute-1.amazonaws.com',
                               :description => " ",
                               :legend => "Website for Students",
                               :default_tags => default_tags,
                               :state => "active",
                               :enable_latex => true)
-        
+
         k12_group.save!
         if admin = User.find_by_login("admin")
             k12_group.owner = admin
@@ -82,7 +82,7 @@ namespace :setup do
     
     desc "Create default widgets"
     task :create_widgets => :environment do
-        default_group = Group.find_by_domain("k12.localhost")
+        default_group = Group.find_by_domain("ec2-184-73-179-91.compute-1.amazonaws.com")
         
         if AppConfig.enable_groups
             default_group.widgets << GroupsWidget.new
