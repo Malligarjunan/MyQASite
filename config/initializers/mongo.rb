@@ -1,20 +1,24 @@
 require 'mm-paginate'
 
-MongoMapper.connection = Mongo::Connection.new('flame.mongohq.com', 27090, { :logger => Rails.logger })
-MongoMapper.database = 'shapado-development'
-MongoMapper.database.authenticate('admin', 'admin')
-
+MongoMapper.setup(YAML.load_file(Rails.root.join('config', 'database.yml')),
+                  Rails.env, { :logger => Rails.logger, :passenger => false })
 
 MongoMapperExt.init
 
 if defined?(PhusionPassenger)
   PhusionPassenger.on_event(:starting_worker_process) do |forked|
-    MongoMapper.connection.connect_to_master if forked
+    MongoMapper.connection.connect if forked
   end
 end
 
 Dir.glob("#{RAILS_ROOT}/app/models/**/*.rb") do |model_path|
   File.basename(model_path, ".rb").classify.constantize
+end
+
+# HACK: do not create indexes on every request
+module MongoMapper::Plugins::Indexes::ClassMethods
+  def ensure_index(*args)
+  end
 end
 
 

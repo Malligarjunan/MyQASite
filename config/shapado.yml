@@ -51,12 +51,12 @@ base: &common
 
 development:
   <<: *common
-  domain: k12.localhost
+  domain: ec2-184-73-179-91.compute-1.amazonaws.com
 production:
   <<: *common
-  domain: k12.localhost
-  googlean_domain: k12.localhost
+  domain: ec2-184-73-179-91.compute-1.amazonaws.com
+  googlean_domain: .ec2-184-73-179-91.compute-1.amazonaws.com
 test:
   <<: *common
-  domain: k12.localhost
+  domain: ec2-184-73-179-91.compute-1.amazonaws.com
 
