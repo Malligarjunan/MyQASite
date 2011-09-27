@@ -1,12 +1,29 @@
 development:
   database: shapado-development
-  host: localhost
-  port: 27017
-
+  host: flame.mongohq.com
+  port: 27090
+  adapter: mongodb
+  username: admin
+  password: admin
+  pool_size: 5
+  timeout: 5
+  db_name: shapado-development
 test:
-  database: shapado-test
-
+  database: shapado-development
+  host: flame.mongohq.com
+  port: 27090
+  adapter: mongodb
+  username: admin
+  password: admin  
+  pool_size: 5
+  timeout: 5
 production:
-  database: shapado-production
-  host: localhost
-  port: 27017
+  database: shapado-development
+  host: flame.mongohq.com
+  port: 27090
+  adapter: mongodb
+  username: admin
+  password: admin  
+  pool_size: 5
+  timeout: 5
+  db_name: shapado-development
