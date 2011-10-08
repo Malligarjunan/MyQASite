@@ -1,7 +1,11 @@
 require 'mm-paginate'
 
-Magent.setup(YAML.load_file(Rails.root.join('config', 'magent.yml')),
-                  Rails.env, {:passenger => true })
+Magent.db_name='shapado-development'
+Magent.host='flame.mongohq.com'
+Magent.port='27090'
+
+MongoMapper.setup(YAML.load_file(Rails.root.join('config', 'database.yml')),
+                  Rails.env, { :logger => Rails.logger, :passenger => true })
 
 MongoMapperExt.init
 
