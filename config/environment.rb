@@ -37,12 +37,12 @@ Rails::Initializer.run do |config|
   config.gem "compass", :version => "0.11.2", :lib => "compass", :source => "http://gemcutter.org"
   config.gem "fancy-buttons", :version => "0.5.5", :source => "http://gemcutter.org"
   config.gem "compass-colors", :version => "0.3.1", :source => "http://gemcutter.org"
-  config.gem "ruby-stemmer", :version => ">=0.5.3", :lib => "lingua/stemmer"
+  
   config.gem "mongomapper_ext", :version => "0.5.0", :source => "http://gemcutter.org"
   config.gem "geoip"
   config.gem "whatlanguage", :version => "1.0.0"
   config.gem "uuidtools", :version => "2.1.2"
-  config.gem "magent", :version => "0.4.2"
+  config.gem "magent", :version => "0.5.2"
   config.gem "differ", :version => "0.1.1"
   config.gem 'super_exception_notifier', :version => '~> 2.0.0', :lib => 'exception_notifier'
   config.gem "warden"
