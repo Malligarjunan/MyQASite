@@ -1,4 +1,5 @@
 require 'mm-paginate'
+
 Magent::db_name='shapado-development'
 Magent::host='flame.mongohq.com'
 Magent::port='27090'
